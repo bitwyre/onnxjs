@@ -19,6 +19,7 @@ const args = parseTestRunnerCliArgs(process.argv.slice(2));
 
 logger.verbose('TestRunnerCli.Init.Config', inspect(args));
 
+// tslint:disable: non-literal-fs-path
 const TEST_ROOT = path.join(__dirname, '..', 'test');
 const TEST_DATA_MODEL_NODE_ROOT = path.join(__dirname, '..', 'deps/onnx/onnx/backend/test/data/node');
 const TEST_DATA_MODEL_ONNX_ROOT = path.join(__dirname, '..', 'deps/data/data/test/onnx/v7');
